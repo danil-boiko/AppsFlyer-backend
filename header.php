@@ -37,9 +37,7 @@
 
 	<header class="header">
 		<div class="container header__content">
-			<a href="/" class="header__logo">
-				<img src="img/icons/logo.svg" alt="">
-			</a>
+			<a href="/" class="header__logo"><?php the_custom_logo(); ?></a>
 		</div>
 	</header>
 
