@@ -34,8 +34,9 @@ main {
   width: 100%;
   overflow: hidden;
   padding-top: 45px;
+  padding: 45px 0 67px;
   @include media-up(md){
-    padding-top: 65px;
+    padding: 65px 0 148px;
   }
 }
 

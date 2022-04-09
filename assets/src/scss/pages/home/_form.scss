@@ -3,11 +3,130 @@
     @include media-up(lg){
         margin-top: 40px;
     }
+
     &__title{
         margin-bottom: 98px;
         text-align: center;
         @include media-up(lg){
             margin-bottom: 44px;
         }
+    }
+
+    &-inner{
+        margin: 0 auto;
+        @include media-up(md){
+            max-width: 800px;
+            box-shadow: 0px 50px 90px -16px rgba(25, 20, 51, 0.1);
+            border-radius: 8px;
+            padding: 48px 40px;
+        }
+    }
+
+    &__row{
+        display: flex;
+        margin-bottom: 24px;
+        span{
+            display: block;
+            width: 100%;
+            input, select{
+                height: 46px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                padding: 13px 16px 11px;
+                color: #706A80;
+                border: 1px solid #E5E6EC;
+                box-shadow: 0px 1px 2px rgba(0, 51, 99, 0.08);
+                border-radius: 8px;
+                overflow: hidden;
+                &.wpcf7-not-valid{
+                    border-color: #FF8E8E;
+                }
+            }
+            input{
+                &::placeholder{
+                    color: rgba(#706A80, 0.7);
+                }
+            }
+            select{
+                appearance: none;
+                padding-right: 25px;
+                cursor: pointer;
+            }
+            .wpcf7-not-valid-tip{
+                width: 100%;
+                font-weight: 600;
+                font-size: 9px;
+                line-height: 21px;
+                text-transform: uppercase;
+                color: $color-purple;
+                margin: 2px 0 0 17px;
+            }
+        }
+        &--double{
+            flex-direction: column;
+            @include media-up(sm){
+                justify-content: space-between;
+                flex-direction: row;
+            }
+            br {
+                display: none;
+            }
+            span{
+                @include media-up(sm){
+                    width: calc(50% - 10px);
+                }
+                &:first-child{
+                    margin-bottom: 24px;
+                    @include media-up(sm){
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        &--select{
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                background-image: url(../img/icons/select-arrow.svg);
+                width: 10px;
+                height: 8px;
+                right: 16px;
+                top: 20px;
+            }
+        }
+    }
+
+    &__submit{
+        &-button{
+            display: block;
+            text-align: center;
+            padding: 13px 22px;
+            background-color: $color-purple;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            margin: 0 auto;
+            width: 100%;
+            border: 2px solid $color-purple;
+            transition: background-color .3s, color .3s;
+            height: auto;
+            cursor: pointer;
+            &:hover{
+                background-color: transparent;
+                color: $color-purple;  
+            }
+            @include media-up(sm){
+                width: fit-content;  
+            }
+        }
+    }
+
+    .wpcf7-response-output,
+    .wpcf7-spinner{
+        display: none;
     }
 }
