@@ -1,6 +1,8 @@
 <section class="home-features">
     <div class="container">
-        <h2 class="home-features__title" data-aos="fade-in">Key features</h2>
+        <h2 class="home-features__title" data-aos="fade-in">
+            <?php echo $attributes['title']?>
+        </h2>
         <div class="home-features__list">
 
         <?php 
@@ -20,7 +22,7 @@
                 </p>
             </div>
         <?php endforeach; ?>
-        
+
         </div>
     </div>
 </section>
