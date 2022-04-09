@@ -99,6 +99,10 @@
     }
 
     &__submit{
+        margin-top: 48px;
+        @include media-up(sm){
+            margin-top: 24px;
+        }
         &-button{
             display: block;
             text-align: center;
