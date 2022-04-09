@@ -11,9 +11,8 @@
 
 ?>
 
-	<footer class="footer">
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+	<footer class="footer"></footer>
+</main><!-- #page -->
 
 <?php wp_footer(); ?>
 
