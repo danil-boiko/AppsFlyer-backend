@@ -1,6 +1,7 @@
 # Directories #
-/node_modules
-/dist
+/assets/node_modules
+/assets/dist
+/assets/package-lock.json
 
 # Compiled source #
 *.com
