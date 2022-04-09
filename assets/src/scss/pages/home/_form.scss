@@ -1,0 +1,13 @@
+.home-form{
+    margin-top: 113px;
+    @include media-up(lg){
+        margin-top: 40px;
+    }
+    &__title{
+        margin-bottom: 98px;
+        text-align: center;
+        @include media-up(lg){
+            margin-bottom: 44px;
+        }
+    }
+}

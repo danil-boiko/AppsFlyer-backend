@@ -1,0 +1,20 @@
+// LIBS
+@import '~aos/dist/aos.css';
+
+// SPECIFICATION
+@import "spec/fonts";
+@import "spec/variables";
+@import "spec/mixins";
+@import "spec/global";
+@import "spec/visually-hidden";
+
+// COMPONENTS
+@import "components/container";
+@import "components/header";
+@import "components/footer";
+@import "components/buttons";
+
+// HOMEPAGE
+@import "pages/home/intro";
+@import "pages/home/features";
+@import "pages/home/form";

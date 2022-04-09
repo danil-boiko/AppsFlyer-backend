@@ -1,0 +1,16 @@
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    font-weight: 600;
+    transition: color .3s, background-color .3s;
+    &-white{
+        background-color: #ffffff;
+        color: $color-blue;
+        &:hover{
+            background-color: $color-purple;  
+            color: #ffffff;
+        }
+    }
+}
