@@ -43,6 +43,7 @@
         @include media-up(lg){
             flex-direction: row;
             justify-content: space-between;
+            align-items: center;
 
         }
         @include media-up(xl){
